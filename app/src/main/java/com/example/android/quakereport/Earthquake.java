@@ -5,11 +5,13 @@ public class Earthquake {
     private double magnitude;
     private String location;
     private long unixTime;
+    private String url;
 
-    public Earthquake(double mag, String loc, long time) {
+    public Earthquake(double mag, String loc, long time, String web) {
         magnitude = mag;
         location = loc;
         unixTime = time;
+        url = web;
     }
 
     public double getMagnitude() {
@@ -22,5 +24,9 @@ public class Earthquake {
 
     public long getUnixTime() {
         return unixTime;
+    }
+
+    public String getURL() {
+        return url;
     }
 }
